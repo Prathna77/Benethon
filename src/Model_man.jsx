@@ -7,11 +7,12 @@ Command: npx gltfjsx@6.2.16 public/model.glb
 
 import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF("/model.glb");
+export function Model_Man(props) {
+  const { nodes, materials } = useGLTF("/avatar_man.glb");
   return (
     <group {...props} dispose={null}>
       <primitive object={nodes.Hips} />
+      
       <skinnedMesh
         geometry={nodes.Wolf3D_Hair.geometry}
         material={materials.Wolf3D_Hair}
@@ -56,4 +57,4 @@ export function Model(props) {
   );
 }
 
-useGLTF.preload("/model.glb");
+useGLTF.preload("/avatar_man.glb");

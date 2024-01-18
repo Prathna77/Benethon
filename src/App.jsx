@@ -1,12 +1,15 @@
-import Mannequin from "./Mannequin";
-import "./App.css";
 import NavBar from "./components/NavBar";
+
+
+import "./App.css";
+import { Outlet } from "react-router";
 
 function App() {
   return (
     <>
       <NavBar />
-      <Mannequin />
+      < Outlet />
+
     </>
   );
 }
