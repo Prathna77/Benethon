@@ -1,7 +1,9 @@
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  display: table;
+ z-index: 999;
+ display: flex;
+ justify-content: flex-start;
+ position: sticky;
 }
 
 .clearfix:after {
