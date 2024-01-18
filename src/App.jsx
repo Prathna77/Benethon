@@ -1,18 +1,18 @@
-
-import Style from './components/Style'
-import Mannequin from "./Mannequin";
-import "./App.css";
 import NavBar from "./components/NavBar";
-import BoutondeGauche from './Composent/BoutondeGauche'
+import Style from "./components/Style";
+import BoutondeGauche from "./Composent/BoutondeGauche";
+
+import { Outlet } from "react-router";
+import "./App.css";
+
 function App() {
   return (
     <>
-      
       <NavBar />
       <Style />
-      <Mannequin />
-      < BoutondeGauche />
-
+  
+      <BoutondeGauche />
+      <Outlet />
     </>
   );
 }

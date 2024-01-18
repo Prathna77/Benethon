@@ -1,10 +1,31 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import App from "./App";
+import Avatar_Man from "./Avatar_man";
+import Avatar_Woman from "./Avatar_woman";
+import "./index.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Avatar_Man />,
+      },
+      {
+        path: "/woman",
+        element: <Avatar_Woman/>,
+      },
+    ],
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
