@@ -6,14 +6,15 @@ import NavBar from "./components/NavBar";
 import BoutondeGauche from './Composent/BoutondeGauche'
 function App() {
   return (
-    <>
-      
+    
+      <div>
       <NavBar />
-      <Style />
-      <Mannequin />
+<div className="placement">
       < BoutondeGauche />
-
-    </>
+      <Mannequin />
+      <Style />
+      </div>
+    </div>
   );
 }
 

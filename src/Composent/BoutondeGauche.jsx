@@ -26,17 +26,6 @@ function BoutondeGauche() {
               <small>Affiner votre teint de peau</small>
             </a>
           </li>
-          <li className="float">
-            <a className="search">
-              <input type="text" value="Trouver une forme adapter" />
-              <button>
-                <i className="fa fa-search"></i>
-              </button>
-            </a>
-            <a href="" className="search-mobile">
-              <i className="fa fa-search"></i>
-            </a>
-          </li>
         </ul>
       </nav>
     </div>

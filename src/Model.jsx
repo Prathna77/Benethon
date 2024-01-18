@@ -2,6 +2,7 @@
 import { useGLTF } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 
+
 export default function Model(props) {
   const { nodes, materials } = useGLTF("/model-v1.glb");
   const { camera } = useThree();
@@ -33,7 +34,8 @@ export default function Model(props) {
   };
 
   return (
-    <group {...props} dispose={null}>
+    
+    <group {...props} dispose={null} >
       <primitive object={nodes.Hips} />
       <skinnedMesh
         geometry={nodes.Wolf3D_Hair.geometry}
