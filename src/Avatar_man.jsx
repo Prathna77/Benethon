@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import ModelMan from "./Model2";
 
-export default function Avatar_Man() {
+export default function Avatar_man() {
   return (
     <Canvas
       camera={{ position: [2, 0, 12.25], fov: 15 }}
