@@ -40,14 +40,48 @@ function Style() {
   };
 
   const hairColors = [
-    { name: "Blonde", color: "#ffd700" },
-    { name: "Châtain", color: "#33ff57" },
-    { name: "Brune / Noire", color: "#5733ff" },
-    { name: "Rousse / Auburn", color: "#ff5733" },
-    { name: "Eclaircissant", color: "#33ff57" },
-    { name: "Tie & dye et balayage", color: "#5733ff" },
-    { name: "Retouche racines", color: "#ff5733" },
-    { name: "Flashy", color: "#33ff57" },
+    {
+      name: "Blonde",
+      color: "#ffd700",
+      link: "blonde",
+      href: "https://www.loreal-paris.fr/coloration/par-couleur/blonde/",
+    },
+    {
+      name: "Châtain",
+      color: "#33ff57",
+      link: "chatain",
+      href: "https://www.loreal-paris.fr/coloration/par-couleur/chatain/",
+    },
+    {
+      name: "Brune / Noire",
+      color: "#5733ff",
+      link: "brune-noire",
+      href: "https://www.loreal-paris.fr/coloration/par-couleur/brune-noire/",
+    },
+    {
+      name: "Rousse / Auburn",
+      color: "#ff5733",
+      link: "rousse-auburn",
+      href: "https://www.loreal-paris.fr/coloration/par-couleur/rousse-auburn/",
+    },
+    {
+      name: "Eclaircissant",
+      color: "#33ff57",
+      link: "eclaircissant",
+      href: "https://www.loreal-paris.fr/coloration/par-couleur/eclaircissant/",
+    },
+    {
+      name: "Tie & dye et balayage",
+      color: "#5733ff",
+      link: "tie-dye-et-balayage",
+      href: "https://www.loreal-paris.fr/coloration/par-couleur/tie-dye-et-balayage/",
+    },
+    {
+      name: "Retouche racines",
+      color: "#ff5733",
+      link: "retouche-racines",
+      href: "https://www.loreal-paris.fr/coloration/par-couleur/retouche-racines/",
+    },
   ];
 
   const makeupCategories = [
@@ -127,7 +161,7 @@ function Style() {
                       style={{ backgroundColor: hairColor.color }}
                     ></div>
                     <a
-                      href={`https://www.loreal-paris.fr/coloration/par-couleur/${hairColor.name.toLowerCase()}`}
+                      href={`https://www.loreal-paris.fr/coloration/par-couleur/${hairColor.link}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
