@@ -140,6 +140,7 @@ function Style() {
           </div>
           <div className="modal-body">
             {selectedMenu === null && (
+              
               <div className="menu-options">
                 <button className="rachidbutton" onClick={() => openSubMenu("Coloration")}>
                   Coloration
@@ -176,7 +177,7 @@ function Style() {
               <div className="makeup-categories">
                 {makeupCategories.map((category, index) => (
                   <div key={index} className="makeup-category">
-                    <img src={category.image} />
+                    {/* <img className="pht" src={category.image} /> */}
 
                     <a
                       href={`https://www.loreal-paris.fr/maquillage/${category.link}`}
