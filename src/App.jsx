@@ -1,13 +1,12 @@
-import './App.css'
-import NavBar from './components/NavBar';
+import Mannequin from "./Mannequin";
+import "./App.css";
 
 function App() {
-
   return (
     <>
-    <NavBar />
+      <Mannequin />
     </>
-  )
+  );
 }
 
 export default App;
