@@ -2,6 +2,9 @@ import { useRef, useState } from "react";
 import "./style.css";
 
 import teintImage from "../assets/image_fond_de_teint.jpg";
+import mascaraImage from "../assets/mascara.jpg";
+import rougeImage from "../assets/levres.jpg";
+import photo3 from "../assets/3.jpg";
 
 function Style() {
   const modalRef = useRef(null);
@@ -86,11 +89,9 @@ function Style() {
 
   const makeupCategories = [
     { category: "Fond de Teint", link: "teint", image: teintImage },
-    { category: "Yeux", link: "yeux" },
-    { category: "Lèvres", link: "levres" },
-    { category: "Ongles", link: "ongles" },
-    // { category: "Maquillage À l'affiche", link: "a-l-affiche" },
-    // { category: "Accessoires", link: "accessoires" },
+    { category: "Yeux", link: "yeux", image: mascaraImage },
+    { category: "Lèvres", link: "levres", image: rougeImage },
+    { category: "Ongles", link: "ongles", image: photo3 },
   ];
 
   const bodyCategories = [
@@ -176,7 +177,8 @@ function Style() {
             {selectedMenu === "Maquillage" && (
               <div className="makeup-categories">
                 {makeupCategories.map((category, index) => (
-                  <div key={index} className="makeup-category">
+                  // <div key={index} className="makeup-category">
+  <div key={index} className="makeup-category" style={{ backgroundImage: `url(${category.image})` }}>
 
                     <a
                       href={`https://www.loreal-paris.fr/maquillage/${category.link}`}
