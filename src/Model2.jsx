@@ -1,11 +1,13 @@
 /* eslint-disable react/no-unknown-property */
 import { useGLTF } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
+import { useOutletContext } from "react-router-dom";
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF("/model-v1.glb");
+  const { nodes, materials } = useGLTF("/avatar_man.glb");
   const { camera } = useThree();
-  console.log(materials);
+  const [setModalIsOpen] = useOutletContext();
+
   const handleClick = (e, name) => {
     e.stopPropagation();
     console.log(camera);
@@ -18,13 +20,15 @@ export default function Model(props) {
         camera.position.y = 7.5;
         camera.position.z = 10.35237941390564;
         camera.scale.z = 10;
+        setModalIsOpen(true);
         break;
 
       case "head":
         camera.position.x = 0.1;
-        camera.position.y = 6.5;
-        camera.position.z = 11;
-        camera.scale.z = 8;
+        camera.position.y = 54;
+        camera.position.z = 85;
+        camera.scale.z = 140;
+        setModalIsOpen(true);
         break;
 
       default:
@@ -56,6 +60,11 @@ export default function Model(props) {
         geometry={nodes.Wolf3D_Outfit_Top.geometry}
         material={materials.Wolf3D_Outfit_Top}
         skeleton={nodes.Wolf3D_Outfit_Top.skeleton}
+      />
+      <skinnedMesh
+        geometry={nodes.Wolf3D_Outfit_Bottom.geometry} // Remplacez par le nom approprié pour les jambes
+        material={materials.Wolf3D_Outfit_Bottom} // Remplacez par le nom approprié pour le matériau des jambes
+        skeleton={nodes.Wolf3D_Outfit_Bottom.skeleton}
       />
       <skinnedMesh
         geometry={nodes.EyeLeft.geometry}
@@ -93,4 +102,4 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("/model-v1.glb");
+useGLTF.preload("/avatar_man");
