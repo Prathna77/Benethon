@@ -89,8 +89,8 @@ function Style() {
     { category: "Yeux", link: "yeux" },
     { category: "Lèvres", link: "levres" },
     { category: "Ongles", link: "ongles" },
-    { category: "Maquillage À l'affiche", link: "a-l-affiche" },
-    { category: "Accessoires", link: "accessoires" },
+    // { category: "Maquillage À l'affiche", link: "a-l-affiche" },
+    // { category: "Accessoires", link: "accessoires" },
   ];
 
   const bodyCategories = [
@@ -140,6 +140,7 @@ function Style() {
           </div>
           <div className="modal-body">
             {selectedMenu === null && (
+
               <div className="menu-options">
                 <button className="rachidbutton" onClick={() => openSubMenu("Coloration")}>
                   Coloration
@@ -176,7 +177,6 @@ function Style() {
               <div className="makeup-categories">
                 {makeupCategories.map((category, index) => (
                   <div key={index} className="makeup-category">
-                    <img src={category.image} />
 
                     <a
                       href={`https://www.loreal-paris.fr/maquillage/${category.link}`}

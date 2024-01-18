@@ -15,8 +15,8 @@ function BoutondeGauche() {
           <li>
             <a href="" className="active">
               <i className="fa fa-edit"></i>
-              <strong>Type de Cheuveux</strong>
-              <small>sélectionner votre type de cheuveux</small>
+              <strong>Type de Cheveux</strong>
+              <small>sélectionner votre type de cheveux</small>
             </a>
           </li>
           <li>

@@ -1,20 +1,31 @@
-
-import Style from './components/Style'
-import Mannequin from "./Mannequin";
-import "./App.css";
+import { useState } from "react";
+import { Outlet } from "react-router";
+import { Modal } from "react-responsive-modal";
 import NavBar from "./components/NavBar";
-import BoutondeGauche from './Composent/BoutondeGauche'
+import Style from "./components/Style";
+import BoutondeGauche from "./Composant/BoutondeGauche";
+import "./App.css";
+import "react-responsive-modal/styles.css";
+
 function App() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
-    
-      <div>
+    <>
+      <Modal
+        open={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+        contentLabel="Example Modal"
+      >
+        <h2>You clicked on!</h2>
+        <button onClick={() => setModalIsOpen(false)}>Close</button>
+      </Modal>
+
       <NavBar />
-<div className="placement">
-      < BoutondeGauche />
-      <Mannequin />
       <Style />
-      </div>
-    </div>
+  
+      <BoutondeGauche />
+      <Outlet context={[setModalIsOpen]} />
+    </>
   );
 }
 

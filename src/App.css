@@ -87,7 +87,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+ HTML5 display-role reset for older browsers 
 article,
 aside,
 details,
@@ -145,9 +145,18 @@ table {
 
 .read-the-docs {
   color: #888;
+
 }
 
 .placement{ 
   display: flex;
   justify-content: space-between;
+}
+
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
 }
