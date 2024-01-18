@@ -16,7 +16,7 @@ h1 {
 }
 
 .buttonmenu {
-  background-color: #ff5733;
+  background-color: #E7C387;
   padding: 10px;
   color: white;
   border: none;
@@ -28,11 +28,12 @@ h1 {
 }
 
 .rachidbutton {
-  background-color: #db3b18;
+  background-color: #E7C387;
   color: #fff;
   padding: 10px 20px;
   font-size: 16px;
-  border: none;
+  border:#333;
+  border-radius: 2px solid ;
   cursor: pointer;
 }
 
@@ -44,7 +45,7 @@ h1 {
   display: flex;
   z-index: 2;
   width: 20%;
-  height: 50%;
+  height: 60%;
   cursor: pointer;
   position: fixed;
   right: 0rem;
@@ -57,11 +58,12 @@ h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   max-width: 600px;
   width: 100%;
+  height: 100%;
   margin: 20px;
 }
 
 .modal-header {
-  background-color: #ff5733;
+  background-color: #E7C387;
   color: #fff;
   padding: 15px;
   text-align: center;
@@ -88,15 +90,16 @@ h1 {
 
 .hair-color-links {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
+  gap: 0.2rem;
 }
 
 .hair-color-links a {
   color: #333;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 5px ;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
@@ -106,12 +109,6 @@ h1 {
 .hair-color-links a:hover {
   background-color: #ff5733;
   color: #fff;
-}
-
-iframe {
-  width: 100%;
-  height: 400px;
-  border: none;
 }
 
 .hair-color-link {
@@ -132,13 +129,15 @@ iframe {
 .makeup-categories {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   gap: 20px;
+  
 }
 
 
 .makeup-category {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url("../assets/image_fond_de_teint.jpg");
@@ -149,20 +148,14 @@ iframe {
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  /* transition: transform 0.3s ease-in-out; */
 }
 
 .makeup-category a {
   text-decoration: none;
-  /* color: #333; */
   color: #fff;
-
   font-weight: bold;
-  font-size: 16px;
-}
-
-.makeup-category:hover {
-  transform: scale(1.05);
+  font-size: 8px;
 }
 
 .makeup-category img {
