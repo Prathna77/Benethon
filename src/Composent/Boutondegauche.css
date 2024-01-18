@@ -147,7 +147,7 @@
 }
 
 .mcd-menu li:hover > a {
-  color: #DAA520;
+  color: #e7c187;
 }
 .mcd-menu li a.active {
   position: relative;
@@ -159,8 +159,8 @@
   -webkit-box-shadow: 0 0 5px #ddd;
 
   /* == */
-  border-left: 4px solid #DAA520;
-#DAA520  margin: 0 -4px;
+  border-left: 4px solid #e7c187;
+#e4e144  margin: 0 -4px;
   /* == */
 }
 .mcd-menu li a.active:before {
@@ -168,14 +168,14 @@
   position: absolute;
   /*top: 0;
   left: 45%;
-  border-top: 5px solid #DAA520;
+  border-top: 5px solid #e4e144;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;*/
 
   /* == */
   top: 42%;
   left: 0;
-  border-left: 5px solid #DAA520;
+  border-left: 5px solid #e7c187;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   /* == */
@@ -187,7 +187,7 @@
   position: absolute;
   top: 42%;
   right: 0;
-  border-right: 5px solid #DAA520;
+  border-right: 5px solid #e7c187;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
 }
@@ -256,7 +256,7 @@
   padding: 0;
   margin: 0;
   background: #000000;
-  /*border-top: 4px solid #DAA520;*/
+  /*border-top: 4px solid #e4e144;*/
   opacity: 0;
   visibility: hidden;
   transition: all 300ms linear;
@@ -270,7 +270,7 @@
   /* == */
   left: 280px;
   top: 0px;
-  border-left: 4px solid #DAA520;
+  border-left: 4px solid #e7c187;
   /* == */
 }
 .mcd-menu li ul:before {
@@ -278,14 +278,14 @@
   position: absolute;
   /*top: -8px;
   left: 23%;
-  border-bottom: 5px solid #DAA520;
+  border-bottom: 5px solid #e4e144;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;*/
 
   /* == */
   top: 25px;
   left: -9px;
-  border-right: 5px solid #DAA520;
+  border-right: 5px solid #e7c187;
   border-bottom: 5px solid transparent;
   border-top: 5px solid transparent;
   /* == */
@@ -323,7 +323,7 @@
   left: 230px;
   top: 0;
   border: 0;
-  border-left: 4px solid #DAA520;
+  border-left: 4px solid #e7c187;
 }
 .mcd-menu li ul li ul:before {
   content: "";
@@ -333,7 +333,7 @@
   /* == */
   left: -9px;
   /* == */
-  border-right: 5px solid #DAA520;
+  border-right: 5px solid #e7c187;
   border-bottom: 5px solid transparent;
   border-top: 5px solid transparent;
 }
@@ -368,9 +368,9 @@
   /* == */
 }
 .mcd-menu li a.search button {
-  border: 1px solid #DAA520;
+  border: 1px solid #e7c187;
   /*padding: 10px;*/
-  background: #DAA520;
+  background: #e7c187;
   outline: none;
   color: #000000;
   margin-left: -4px;
@@ -381,13 +381,13 @@
   /* == */
 }
 .mcd-menu li a.search input:focus {
-  border: 1px solid #DAA520;
+  border: 1px solid #e7c187;
 }
 
 .search-mobile {
   display: none !important;
-  background: #DAA520;
-  border-left: 1px solid #DAA520;
+  background: #e7c187;
+  border-left: 1px solid #e7c187;
   border-radius: 0 3px 3px 0;
 }
 .search-mobile i {
@@ -474,7 +474,7 @@
     position: absolute;
     bottom: 0px;
     left: 0;
-    background: #DAA520;
+    background: #e7c187;
     color: #000000;
     min-width: 100%;
     text-transform: lowercase;
@@ -505,13 +505,13 @@
     left: 35px;
     top: 45px;
     border: 0;
-    border-top: 4px solid #DAA520;
+    border-top: 4px solid #e7c187;
   }
   .mcd-menu li ul li ul li > ul:before {
     left: 30px;
     top: -9px;
     border: 0;
-    border-bottom: 5px solid #DAA520;
+    border-bottom: 5px solid #e7c187;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
   }
@@ -551,7 +551,7 @@
     position: absolute;
     bottom: 0px;
     left: 0;
-    background: #DAA520;
+    background: #e7c187;
     color: #000000;
     min-width: 100%;
     text-transform: lowercase;
@@ -582,13 +582,13 @@
     left: 35px;
     top: 45px;
     border: 0;
-    border-top: 4px solid #DAA520;
+    border-top: 4px solid #e7c187;
   }
   .mcd-menu li ul li ul li > ul:before {
     left: 30px;
     top: -9px;
     border: 0;
-    border-bottom: 5px solid #DAA520;
+    border-bottom: 5px solid #e7c187;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
   }
