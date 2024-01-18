@@ -43,7 +43,7 @@ h1 {
 .modal {
   display: flex;
   z-index: 2;
-  width: 30%;
+  width: 20%;
   height: 50%;
   cursor: pointer;
   position: fixed;
