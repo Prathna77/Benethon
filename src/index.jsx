@@ -4,7 +4,6 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import Avatar_Man from "./Avatar_man";
 import Avatar_Woman from "./Avatar_woman";
-import App from "./App";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +16,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/woman",
-        element: <Avatar_Woman/>,
+        element: <Avatar_Woman />,
       },
     ],
   },
