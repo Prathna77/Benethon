@@ -141,13 +141,13 @@ function Style() {
           <div className="modal-body">
             {selectedMenu === null && (
               <div className="menu-options">
-                <button onClick={() => openSubMenu("Coloration")}>
+                <button className="rachidbutton" onClick={() => openSubMenu("Coloration")}>
                   Coloration
                 </button>
-                <button onClick={() => openSubMenu("Maquillage")}>
+                <button className="rachidbutton" onClick={() => openSubMenu("Maquillage")}>
                   Maquillage
                 </button>
-                <button onClick={() => openSubMenu("Corps")}>
+                <button className="rachidbutton" onClick={() => openSubMenu("Corps")}>
                   Soin du visage
                 </button>
               </div>

@@ -6,8 +6,9 @@ import NavBar from "./components/NavBar";
 function App() {
   return (
     <>
-      <Style />
+      
       <NavBar />
+      <Style />
       <Mannequin />
     </>
   );
