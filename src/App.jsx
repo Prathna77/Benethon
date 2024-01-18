@@ -11,6 +11,8 @@ function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
     <>
+        <NavBar />
+        <BoutondeGauche />
       <Modal
         open={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
@@ -19,11 +21,9 @@ function App() {
         <h2>You clicked on!</h2>
         <button onClick={() => setModalIsOpen(false)}>Close</button>
       </Modal>
+        <Style />
 
-      <NavBar />
-      <Style />
   
-      <BoutondeGauche />
       <Outlet context={[setModalIsOpen]} />
     </>
   );
