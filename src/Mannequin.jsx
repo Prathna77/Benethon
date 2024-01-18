@@ -9,7 +9,7 @@ export default function Mannequin() {
     <Canvas
       camera={{ position: [2, 0, 12.25], fov: 15 }}
       style={{
-        backgroundColor: "#111a21",
+        backgroundColor: "white",
         width: "100vw",
         height: "100vh",
       }}
