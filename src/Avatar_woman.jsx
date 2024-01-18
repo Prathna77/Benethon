@@ -1,16 +1,15 @@
-/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Model from "./Model";
+import ModelWoman from "./Model1";
 
-export default function Mannequin({setModalIsOpen}) {
+export default function Avatar_woman() {
   return (
     <Canvas
       camera={{ position: [2, 0, 12.25], fov: 15 }}
       style={{
-        backgroundColor: "#111a21",
+        backgroundColor: "white",
         width: "100vw",
         height: "100vh",
       }}
@@ -19,7 +18,7 @@ export default function Mannequin({setModalIsOpen}) {
       <ambientLight intensity={0.1} />
       <directionalLight intensity={0.4} />
       <Suspense fallback={null}>
-        <Model position={[0.025, -0.9, 1]} setModalIsOpen={setModalIsOpen}/>
+        <ModelWoman position={[0.025, -0.9, 1]} />
       </Suspense>
       <OrbitControls />
     </Canvas>

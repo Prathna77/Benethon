@@ -1,0 +1,164 @@
+.modal-content {
+  background-color: burlywood;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttonmenu {
+  background-color: #E7C387;
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  right: 30px;
+  top: 9rem;
+  z-index: 1;
+}
+
+.rachidbutton {
+  background-color: #E7C387;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border:#333;
+  border-radius: 2px solid ;
+  cursor: pointer;
+}
+
+#myModal {
+  display: flex;
+}
+
+.modal {
+  display: flex;
+  z-index: 2;
+  width: 20%;
+  height: 60%;
+  cursor: pointer;
+  position: fixed;
+  right: 0rem;
+  top: 11em;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+}
+
+.modal-header {
+  background-color: #E7C387;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.color-menu {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.color-option {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.hair-color-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+
+.hair-color-links a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px ;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hair-color-links a:hover {
+  background-color: #ff5733;
+  color: #fff;
+}
+
+.hair-color-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hair-color-option {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* onglet maquillage */
+
+.makeup-categories {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+
+.makeup-category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/image_fond_de_teint.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+.makeup-category a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 8px;
+}
+
+.makeup-category img {
+  width: 2rem;
+  height: 2rem;
+}
