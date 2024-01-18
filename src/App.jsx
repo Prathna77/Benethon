@@ -1,8 +1,9 @@
+
 import Style from './components/Style'
 import Mannequin from "./Mannequin";
 import "./App.css";
 import NavBar from "./components/NavBar";
-
+import BoutondeGauche from './Composent/BoutondeGauche'
 function App() {
   return (
     <>
@@ -10,6 +11,8 @@ function App() {
       <NavBar />
       <Style />
       <Mannequin />
+      < BoutondeGauche />
+
     </>
   );
 }
