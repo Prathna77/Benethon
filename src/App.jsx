@@ -1,17 +1,16 @@
-import { useState } from 'react'
 import Style from './components/Style'
-
-import './App.css'
+import Mannequin from "./Mannequin";
+import "./App.css";
+import NavBar from "./components/NavBar";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Style />
-      
+      <NavBar />
+      <Mannequin />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
