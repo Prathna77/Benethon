@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import ModelWoman from "./Model1";
 
+
 export default function Avatar_woman() {
   return (
     <Canvas
