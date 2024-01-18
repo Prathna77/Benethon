@@ -1,9 +1,9 @@
 .clearfix:before,
 .clearfix:after {
- z-index: 999;
- display: flex;
- justify-content: flex-start;
- position: sticky;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+  position: sticky;
 }
 
 .clearfix:after {
@@ -162,7 +162,7 @@
 
   /* == */
   border-left: 4px solid #e7c187;
-#e4e144  margin: 0 -4px;
+  margin: 0 -4px;
   /* == */
 }
 .mcd-menu li a.active:before {
