@@ -15,10 +15,10 @@
 
 .container {
   position: relative;
-  margin: 0px auto;
+  margin-left: 3rem;
   padding: 50px 0;
   clear: both;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 @media only screen and (min-width: 1200px) {
   .container {
@@ -149,7 +149,7 @@
 }
 
 .mcd-menu li:hover > a {
-  color: #e7c187;
+  color: #e7c387;
 }
 .mcd-menu li a.active {
   position: relative;
@@ -160,10 +160,10 @@
   -moz-box-shadow: 0 0 5px #ddd;
   -webkit-box-shadow: 0 0 5px #ddd;
 
-  /* == */
-  border-left: 4px solid #e7c187;
+  
+  border-left: 4px solid #e7c387;
   margin: 0 -4px;
-  /* == */
+  
 }
 .mcd-menu li a.active:before {
   content: "";
@@ -177,7 +177,7 @@
   /* == */
   top: 42%;
   left: 0;
-  border-left: 5px solid #e7c187;
+  border-left: 5px solid #e7c387;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   /* == */
@@ -189,7 +189,7 @@
   position: absolute;
   top: 42%;
   right: 0;
-  border-right: 5px solid #e7c187;
+  border-right: 5px solid #e7c387;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
 }
@@ -272,7 +272,7 @@
   /* == */
   left: 280px;
   top: 0px;
-  border-left: 4px solid #e7c187;
+  border-left: 4px solid #e7c387;
   /* == */
 }
 .mcd-menu li ul:before {
@@ -287,7 +287,7 @@
   /* == */
   top: 25px;
   left: -9px;
-  border-right: 5px solid #e7c187;
+  border-right: 5px solid #e7c387;
   border-bottom: 5px solid transparent;
   border-top: 5px solid transparent;
   /* == */
@@ -325,7 +325,7 @@
   left: 230px;
   top: 0;
   border: 0;
-  border-left: 4px solid #e7c187;
+  border-left: 4px solid #e7c387;
 }
 .mcd-menu li ul li ul:before {
   content: "";
@@ -335,7 +335,7 @@
   /* == */
   left: -9px;
   /* == */
-  border-right: 5px solid #e7c187;
+  border-right: 5px solid #e7c387;
   border-bottom: 5px solid transparent;
   border-top: 5px solid transparent;
 }
@@ -370,9 +370,9 @@
   /* == */
 }
 .mcd-menu li a.search button {
-  border: 1px solid #e7c187;
+  border: 1px solid #e7c387;
   /*padding: 10px;*/
-  background: #e7c187;
+  background: #e7c387;
   outline: none;
   color: #000000;
   margin-left: -4px;
@@ -383,13 +383,13 @@
   /* == */
 }
 .mcd-menu li a.search input:focus {
-  border: 1px solid #e7c187;
+  border: 1px solid #e7c387;
 }
 
 .search-mobile {
   display: none !important;
-  background: #e7c187;
-  border-left: 1px solid #e7c187;
+  background: #e7c387;
+  border-left: 1px solid #e7c387;
   border-radius: 0 3px 3px 0;
 }
 .search-mobile i {
@@ -476,7 +476,7 @@
     position: absolute;
     bottom: 0px;
     left: 0;
-    background: #e7c187;
+    background: #e7c387;
     color: #000000;
     min-width: 100%;
     text-transform: lowercase;
@@ -507,13 +507,13 @@
     left: 35px;
     top: 45px;
     border: 0;
-    border-top: 4px solid #e7c187;
+    border-top: 4px solid #e7c387;
   }
   .mcd-menu li ul li ul li > ul:before {
     left: 30px;
     top: -9px;
     border: 0;
-    border-bottom: 5px solid #e7c187;
+    border-bottom: 5px solid #e7c387;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
   }
@@ -553,7 +553,7 @@
     position: absolute;
     bottom: 0px;
     left: 0;
-    background: #e7c187;
+    background: #e7c387;
     color: #000000;
     min-width: 100%;
     text-transform: lowercase;
@@ -584,13 +584,13 @@
     left: 35px;
     top: 45px;
     border: 0;
-    border-top: 4px solid #e7c187;
+    border-top: 4px solid #e7c387;
   }
   .mcd-menu li ul li ul li > ul:before {
     left: 30px;
     top: -9px;
     border: 0;
-    border-bottom: 5px solid #e7c187;
+    border-bottom: 5px solid #e7c387;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
   }
