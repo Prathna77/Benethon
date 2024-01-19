@@ -1,6 +1,6 @@
-.modal-content {
+/* .modal-content {
   background-color: burlywood;
-}
+} */
 
 body {
   font-family: "Arial", sans-serif;
@@ -16,7 +16,7 @@ h1 {
 }
 
 .buttonmenu {
-  background-color: #E7C387;
+  background-color: #e7c387;
   padding: 10px;
   color: white;
   border: none;
@@ -28,12 +28,12 @@ h1 {
 }
 
 .rachidbutton {
-  background-color: #E7C387;
+  background-color: #e7c387;
   color: #fff;
   padding: 10px 20px;
   font-size: 16px;
-  border:#333;
-  border-radius: 2px solid ;
+  border: #333;
+  border-radius: 2px solid;
   cursor: pointer;
 }
 
@@ -45,7 +45,7 @@ h1 {
   display: flex;
   z-index: 2;
   width: 20%;
-  height: 60%;
+  height: 70%;
   cursor: pointer;
   position: fixed;
   right: 0rem;
@@ -63,16 +63,27 @@ h1 {
 }
 
 .modal-header {
-  background-color: #E7C387;
+  background-color: #e7c387;
   color: #fff;
-  padding: 15px;
+  padding: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+
+  background-image: url("../assets/orealparis.jpg");
+  background-size: cover;
 }
 
 .modal-body {
   padding: 20px;
+}
+
+.menu-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
 }
 
 .color-menu {
@@ -99,8 +110,8 @@ h1 {
 .hair-color-links a {
   color: #333;
   text-decoration: none;
-  padding: 5px ;
-  border: 1px solid #ccc;
+  padding: 5px;
+  border: 2px solid #e7c387;
   border-radius: 5px;
   background-color: #fff;
   transition: background-color 0.3s ease-in-out;
@@ -132,15 +143,13 @@ h1 {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  
 }
-
 
 .makeup-category {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E7C387;
+  background-color: #e7c387;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
@@ -161,13 +170,11 @@ h1 {
   height: 2rem;
 }
 
-
 .makeup-category[data-category="Fond de Teint"] {
   background-image: url("../assets/image_fond_de_teint.jpg");
 }
 
 .bodyup-categories {
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -182,11 +189,15 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E7C387;
+  background-color: #e7c387;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-image {
+  width: 3rem;
+  border-radius: 50%;
+  margin-left: 2rem;
 }
