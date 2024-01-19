@@ -10,11 +10,12 @@ export default function Avatar_woman() {
     <Canvas
       camera={{ position: [2, 0, 12.25], fov: 15 }}
       style={{
-        backgroundColor: "white",
-        width: "22vw",
-        height: "50vh",
+        backgroundColor: "black",
+        width: "28vw",
+        height: "60vh",
         margin: "auto",
-        marginTop:"2.5rem"
+        marginTop:"2.5rem",
+        marginBottom:"2.5rem"
       }}
     >
       <ambientLight intensity={1.25} />

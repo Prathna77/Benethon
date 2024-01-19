@@ -9,23 +9,26 @@ import "react-responsive-modal/styles.css";
 
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [scale, setScale] = useState(1);
   return (
-    <>
+    <div>
         <NavBar />
+        <div className="placement">
         <BoutondeGauche />
-      <Modal
+      {/* <Modal
         open={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
         contentLabel="Example Modal"
       >
         <h2>You clicked on!</h2>
         <button onClick={() => setModalIsOpen(false)}>Close</button>
-      </Modal>
-        <Style />
+      </Modal> */}
 
   
-      <Outlet context={[setModalIsOpen]} />
-    </>
+      <Outlet context={[setModalIsOpen,setScale]} />
+        <Style />
+      </div>
+    </div>
   );
 }
 

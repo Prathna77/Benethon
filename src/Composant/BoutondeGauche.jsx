@@ -1,4 +1,5 @@
 import "./BoutondeGauche.css";
+import teint from "../../src/assets/teint.png";
 
 function BoutondeGauche() {
   return (
@@ -11,6 +12,9 @@ function BoutondeGauche() {
               <strong>Forme du visage</strong>
               <small>sélectionner votre forme de visage</small>
             </a>
+            <ul>
+              <li> <img src={teint} alt=""/> </li>
+            </ul>
           </li>
           <li>
             <a href="" className="active">

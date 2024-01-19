@@ -6,7 +6,7 @@ import { useOutletContext } from "react-router-dom";
 export default function Model(props) {
   const { nodes, materials } = useGLTF("/avatar_man.glb");
   const { camera } = useThree();
-  const [setModalIsOpen] = useOutletContext();
+  const [setScale] = useOutletContext();
 
   const handleClick = (e, name) => {
     e.stopPropagation();
@@ -20,15 +20,16 @@ export default function Model(props) {
         camera.position.y = 7.5;
         camera.position.z = 10.35237941390564;
         camera.scale.z = 10;
-        setModalIsOpen(true);
+        // setModalIsOpen(true);
         break;
 
       case "head":
         camera.position.x = 0.1;
         camera.position.y = 54;
         camera.position.z = 85;
-        camera.scale.z = 140;
-        setModalIsOpen(true);
+        // camera.scale.z = 140;
+        // setModalIsOpen(true);
+        setScale(140);
         break;
 
       default:
