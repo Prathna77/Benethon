@@ -8,11 +8,14 @@ import ModelMan from "./Model2";
 export default function Avatar_man() {
   return (
     <Canvas
-      camera={{ position: [2, 0, 12.25], fov: 15 }}
+    camera={{ position: [2, 0, 12.25], fov: 15 }}
       style={{
-        backgroundColor: "white",
-        width: "100vw",
-        height: "100vh",
+        backgroundColor: "black",
+        width: "35vw",
+        height: "75vh",
+        margin: "auto",
+        marginTop:"2.5rem",
+        marginBottom:"2.5rem"
       }}
     >
       <ambientLight intensity={1.25} />

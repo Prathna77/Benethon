@@ -1,4 +1,5 @@
 import "./BoutondeGauche.css";
+import teint from "../../src/assets/teint.png";
 
 function BoutondeGauche() {
   return (
@@ -11,6 +12,9 @@ function BoutondeGauche() {
               <strong>Forme du visage</strong>
               <small>sélectionner votre forme de visage</small>
             </a>
+            <ul>
+              <li> <img src={teint} alt=""/> </li>
+            </ul>
           </li>
           <li>
             <a href="" className="active">
@@ -24,17 +28,6 @@ function BoutondeGauche() {
               <i className="fa fa-globe"></i>
               <strong>Teint de peau</strong>
               <small>Affiner votre teint de peau</small>
-            </a>
-          </li>
-          <li className="float">
-            <a className="search">
-              <input type="text" value="Trouver une forme adapter" />
-              <button>
-                <i className="fa fa-search"></i>
-              </button>
-            </a>
-            <a href="" className="search-mobile">
-              <i className="fa fa-search"></i>
             </a>
           </li>
         </ul>

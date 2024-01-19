@@ -1,33 +1,17 @@
-.modal-content {
-  background-color: burlywood;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-}
-
-h1 {
-  color: #333;
-  text-align: center;
-  margin-top: 20px;
-}
-
 .buttonmenu {
   background-color: #E7C387;
   padding: 10px;
   color: white;
-  border: none;
+  border: solid 1px black;
   cursor: pointer;
-  position: fixed;
   right: 30px;
-  top: 9rem;
-  z-index: 1;
+  margin: 3rem 3rem 0 0;
+  height: 2rem;
 }
 
 .rachidbutton {
+
+  border: solid 1px black;
   background-color: #E7C387;
   color: #fff;
   padding: 10px 20px;
@@ -43,11 +27,9 @@ h1 {
 
 .modal {
   display: flex;
-  z-index: 2;
   width: 20%;
   height: 60%;
   cursor: pointer;
-  position: fixed;
   right: 0rem;
   top: 11em;
 }
@@ -134,7 +116,6 @@ h1 {
   gap: 20px;
   
 }
-
 
 .makeup-category {
   display: flex;

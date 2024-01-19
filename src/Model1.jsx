@@ -5,11 +5,12 @@ import { useGLTF } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 import { useOutletContext } from "react-router-dom";
 
+
 export default function Model(props) {
   
   const { nodes, materials } = useGLTF("/model-v1.glb");
   const { camera } = useThree();
-  const [setModalIsOpen] = useOutletContext();
+  const [setScale] = useOutletContext();
 
   const handleClick = (e, name) => {
     e.stopPropagation();
@@ -23,15 +24,16 @@ export default function Model(props) {
         camera.position.y = 7.5;
         camera.position.z = 10.35237941390564;
         camera.scale.z = 5;
-        setModalIsOpen(true);
+        // setModalIsOpen(true);
         break;
 
       case "head":
         camera.position.x = 0.1;
         camera.position.y = 54;
         camera.position.z = 85;
-        camera.scale.z = 140;
-        setModalIsOpen(true);
+        // camera.scale.z = 140;
+        // setModalIsOpen(true);
+        setScale(95);
         break;
 
       default:
@@ -40,7 +42,8 @@ export default function Model(props) {
   };
 
   return (
-    <group {...props} dispose={null}>
+    
+    <group {...props} dispose={null} >
       <primitive object={nodes.Hips} />
       <skinnedMesh
         geometry={nodes.Wolf3D_Hair.geometry}
