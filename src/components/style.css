@@ -1,5 +1,22 @@
+/* .modal-content {
+  background-color: burlywood;
+} */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
 .buttonmenu {
-  background-color: #E7C387;
+  background-color: #e7c387;
   padding: 10px;
   color: white;
   border: solid 1px black;
@@ -10,14 +27,13 @@
 }
 
 .rachidbutton {
-
   border: solid 1px black;
-  background-color: #E7C387;
+  background-color: #87e791;
   color: #fff;
   padding: 10px 20px;
   font-size: 16px;
-  border:#333;
-  border-radius: 2px solid ;
+  border: #333;
+  border-radius: 2px solid;
   cursor: pointer;
 }
 
@@ -28,7 +44,7 @@
 .modal {
   display: flex;
   width: 20%;
-  height: 60%;
+  height: 70%;
   cursor: pointer;
   right: 0rem;
   top: 11em;
@@ -45,16 +61,27 @@
 }
 
 .modal-header {
-  background-color: #E7C387;
+  background-color: #e7c387;
   color: #fff;
-  padding: 15px;
+  padding: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+
+  background-image: url("../assets/orealparis.jpg");
+  background-size: cover;
 }
 
 .modal-body {
   padding: 20px;
+}
+
+.menu-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
 }
 
 .color-menu {
@@ -81,8 +108,8 @@
 .hair-color-links a {
   color: #333;
   text-decoration: none;
-  padding: 5px ;
-  border: 1px solid #ccc;
+  padding: 5px;
+  border: 2px solid #e7c387;
   border-radius: 5px;
   background-color: #fff;
   transition: background-color 0.3s ease-in-out;
@@ -114,14 +141,13 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  
 }
 
 .makeup-category {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E7C387;
+  background-color: #e7c387;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
@@ -142,13 +168,11 @@
   height: 2rem;
 }
 
-
 .makeup-category[data-category="Fond de Teint"] {
   background-image: url("../assets/image_fond_de_teint.jpg");
 }
 
 .bodyup-categories {
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -163,11 +187,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E7C387;
+  background-color: #e7c387;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-image {
+  width: 3rem;
+  border-radius: 50%;
+  margin-left: 2rem;
 }
